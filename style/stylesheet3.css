@@ -26,14 +26,6 @@ html {
 }
 
 
-@font-face {
-    font-family: 'THENEXTFONT-DEMOVERSION';
-    src: url('/style/THENEXTFONT-DEMOVERSION.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-
 /* home */
 #HOME {
   width: 100%;
@@ -117,10 +109,11 @@ main {
 }
 .main-content {
   position: absolute;
-  font-family: 'THENEXTFONT-DEMOVERSION';
-  font-size: clamp(2.6rem, 12vw, 8rem);
+  font-family: 'Oagothic';
+  font-weight: 800;
+  font-size: clamp(2.6rem, 12vw, 7rem);
     text-align: left;
-    top: 24%;
+    top: 20%;
     color: var(--primary-color);
 }
 
