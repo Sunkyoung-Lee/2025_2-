@@ -271,7 +271,7 @@ main {
   aspect-ratio: 22 / 31.5;
   border-radius: 20px;
   border: 2px solid var(--primary-color);
-  background-color: var(--point-color);
+  background-color: none;
   box-sizing: border-box;
   transform-style: preserve-3d;
   transition: transform 1.5s ease-out;
@@ -291,12 +291,7 @@ main {
   backface-visibility: hidden;
 }
 
-/* 앞면 */
-.card-front {
-  background-color: var(--point-color);
-}
 
-/* 뒷면 */
 .card-back {
   position: absolute;
   top: 0;
@@ -307,13 +302,20 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  color: var(--primary-color);
   padding: 1.5rem;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   justify-content: flex-end;
 }
 
-/* 뒷면 상단 영역 (이름 + 버튼) */
+.meimage{
+  aspect-ratio: 1/1;
+  width: 100%;
+  z-index: 0;
+}
+.back-header,
+.infor {
+  position: relative;
+}
 .back-header {
   display: flex;
   justify-content: space-between;
@@ -338,6 +340,7 @@ button{
   height: 30px;
   border-radius: 50%;
   border: 2px solid var(--primary-color);
+  background-color: var(--point-color);
   margin: .8vw 0;
   justify-content: center;
   align-items: center;
@@ -352,7 +355,7 @@ button::after{
 }
 
 button:hover{
-  background-color: var(--point-color);
+  background-color: var(--white-color);
   transition: .3s;
 }
 
@@ -422,7 +425,7 @@ button:hover{
 
 
 .from-bottom b{
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.3rem;
   margin-bottom: .5rem;
 }
@@ -585,9 +588,13 @@ h2{
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.4s ease-out;
   margin: 0;
 }
 
+.workcard-button:hover{
+  background-color: var(--point-color);
+}
 .workcard-button::after {
   font-family: 'fontawesome';
   content: "\2b";
