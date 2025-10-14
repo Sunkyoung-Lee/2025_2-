@@ -1,0 +1,287 @@
+.chapter {
+  padding: 0 4.3vw;
+}
+
+
+
+/* HOME */
+@media screen and (max-width: 480px) {
+  #menulist li:not(.logo) {
+    display: none;
+  }
+
+  #menulist .logo {
+    position: static;
+    margin: 0 auto;
+    opacity: 70%;
+  }
+
+  .main-container {
+    width: 90%;
+    border-radius: 15px;
+  }
+
+  .main-content {
+    top: 35%;
+  }
+
+  .scroll-indicator {
+    height: 40px;
+  }
+
+  .mouse {
+    width: 14px;
+    height: 20px;
+  }
+
+  .arrow {
+    width: 6px;
+    height: 6px;
+    margin-top: 4px;
+  }
+
+    .scroll-indicator img {
+    width: 150px;}
+}
+
+
+
+/* ABOUTME */
+
+@media screen and (max-width: 480px) {
+  .aboutmecontainer{
+  margin-top: 10%;
+  padding: 2rem 0;
+  }
+
+  .aboutme-wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    height: auto;
+ }
+
+  .intro-container{
+  margin-left: 0;
+  }
+  .card {
+    width: 92vw;
+    height: 115vw;
+  }
+
+  .card-back .aboutname {
+    font-size: 1.4rem;
+  }
+  .card-back .infor {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .slide-text {
+    font-size: 1rem;
+  }
+
+.from-bottom{
+  margin: 1rem 0;
+  transform: translate(0, -50px);
+}
+.from-bottom ul{
+  margin-bottom: .8rem;
+}
+
+.from-bottom b,
+.from-top h2{
+  font-weight: 700;
+}
+
+.from-bottom p{
+  text-indent: 5rem;
+}
+}
+
+/* WORK */
+
+@media screen and (max-width: 480px) {
+  .work-section {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .work-info{
+  margin-top: 10%;
+  padding: 0rem 0;
+  }
+
+  .work-content,
+  .workcard-wrap,
+  .work-wrap {
+    width: 100%;
+    padding: 0;
+  }
+
+  .work-content,
+  .work-info span{
+    font-size: 1.1rem;
+  }
+  .workcard-content h2{
+    font-size: 1.3rem;
+  }
+  .workcard-content span{
+    font-size: 1rem;
+  }
+
+  .workcard-button{
+    width:23px;
+    height: 23px;
+  }
+
+  .wmain {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .workcard-extra .extra-text span{
+    font-size: .9em;
+    margin-right: 1.5vw;
+  }
+
+  .workcard-extra .extra-img img{
+    height: 40vw;
+  }
+
+}
+
+
+/* project */
+@media screen and (max-width: 480px) {
+  .project-info-container{
+  padding: 0rem 0;
+  height: auto;
+  }
+  .projectcard{
+    height: auto;
+  }
+    .projectcard-content {
+    flex-direction: column;
+  }
+
+  .projectcard-text {
+    align-items: center;
+    margin: 15px 0 7px 0;
+  }
+
+  .projectcard-image {
+    width: 100%; /* 이미지를 전체 너비로 확장 */
+  }
+
+  .project-list{
+    margin-top: 2rem;
+  }
+  .project-info span{
+    font-size: 1.1rem;
+  }
+  .projectcard-text h3,
+  .projectcard-title,
+  .projectcard-hash{
+    margin: 0; padding: 0;
+  }
+
+    .projectcard-text h3{
+      font-size: 1.5rem;
+    }
+  .projectcard-title{
+    font-size: 1.3rem;
+  }
+
+  .projectcard-hash{
+    font-size: 1.1rem;
+  }
+
+  .projectcard-image .img-inner {
+    aspect-ratio: 16/9;
+  }
+
+}
+
+
+/* contact */
+@media screen and (max-width: 480px) {
+  #CONTACT{
+    margin: 4rem 0;
+  }
+  .contact-wrap {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0;
+  }
+
+  .contact-info {
+    text-align: center;
+    padding-right: 0;
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+
+  .contact-list {
+    width: 70vw;
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  .contact-list li{
+    font-size: 1rem;
+  }
+
+  .contact-content{
+    font-size: 1rem;
+    line-height: 25px;
+  }
+
+  .contact-content span{
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+.contact-list.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .moveTopBtn{
+    display: none;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 1024px){
+    .aboutme-wrap {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .from-top {
+    width: 90%; 
+    margin: 10px 0;
+  }
+
+  .aboutme-wrap{
+    height: auto;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .card{
+   width: 30vw;
+  height: 40vw;
+  }
+
+  .contact-wrap{
+    padding: 0;
+  }
+  .contact-content{
+    font-size: 1.4rem;
+  }
+}
